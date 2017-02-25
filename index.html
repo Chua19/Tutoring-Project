@@ -16,14 +16,14 @@
             window.onload = function() {
               var tagline = document.querySelector(".tagline");
               var randomGreeting = Math.floor(Math.random() * 11);
-              var greeting = ["Programmer, Hardcore Gamer, and dabbing so hard. Refresh to see another one", "Programmer, Hardcore Gamer, and a Teemo player. Refresh to see another one", "Programmer, Hardcore Gamer, and a Reinhardt main. Refresh to see another one", "Programmer, Hardcore Gamer, and a Monstercat fan. Refresh to see another one", "Programmer, Hardcore Gamer, and fed up with you. Refresh to see another one", "Programmer, Hardcore Gamer, and why are you still refreshing? Look at my website!. Refresh to see another one", "Programmer, Hardcore Gamer, and in love with butter. Refresh to see another one", "Programmer, Hardcore Gamer, and an expert in narwhals (Nope). Refresh to see another one", "Programmer, Hardcore Gamer, and always sleeping. Refresh to see another one", "Programmer, Hardcore Gamer, and stupid. Refresh to see another one", "Programmer, Hardcore Gamer, and terrible at everrything. Refresh to see another one", "Programmer, Hardcore Gamer, and Doc Chu's son. Refresh to see another one"];
+              var greeting = ["Programmer, Hardcore Gamer, and dabbing so hard. Refresh to see another one", "Programmer, Hardcore Gamer, and a Teemo player. Refresh to see another one", "Programmer, Hardcore Gamer, and a Reinhardt main. Refresh to see another one", "Programmer, Hardcore Gamer, and a Monstercat fan. Refresh to see another one", "Programmer, Hardcore Gamer, and fed up with you. Refresh to see another one", "Programmer, Hardcore Gamer, and why are you still refreshing? Look at my website! Refresh to see another one", "Programmer, Hardcore Gamer, and in love with butter. Refresh to see another one", "Programmer, Hardcore Gamer, and an expert in narwhals (Nope). Refresh to see another one", "Programmer, Hardcore Gamer, and always sleeping. Refresh to see another one", "Programmer, Hardcore Gamer, and stupid. Refresh to see another one", "Programmer, Hardcore Gamer, and terrible at everrything. Refresh to see another one", "Programmer, Hardcore Gamer, and Doc Chu's son. Refresh to see another one"];
               tagline.innerHTML = greeting[randomGreeting];
             };
         </script>
 
   </head>
   <body>
-  <div style="background: #00FFFF url('/img/background.img')">
+
   <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
@@ -31,7 +31,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index.html">Alexander Chu</a>
+                  <a href="index.html">Alexander Chu</a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -46,8 +46,9 @@
                     <li><a href="contact.html">Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
-              </div><!-- /.container-fluid -->
+              <!-- /.container-fluid -->
             </nav>
+			  <div style="background: #00FFFF url('/img/background.img')">
     <h1><center>Alexander Chu</center></h1>
 	<h3 class="subtitle animated fadeInUp tagline"><center></center></h3>
 	<h3></h3>
