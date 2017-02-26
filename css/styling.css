@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Serif:400i');
+
+body {
+  position: relative;
+  height: 100%;
+  padding-top: 150px;
+}
+
+.title {
+  font-family: 'Droid Serif', serif;
+  font-size: 60pt;
+  font-style: italic;
+  color: #fff;
+}
+
+.header {
+  text-align: center;
+  border-bottom: 1px solid #00181f;
+  padding-bottom: 150px;
+}
+
+.icon {
+  width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar-default .navbar-nav > .active > a {
+  border-bottom: 3px solid #f1c40f;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  background-color: #062d36;
+  border-bottom: 3px solid #05242b;
+}
+
+.footer {
+    min-height: 50px;
+    background-color: #042026;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
