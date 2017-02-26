@@ -37,9 +37,12 @@ body {
 }
 
 .footer {
-    min-height: 50px;
-    background-color: #042026;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #042026;
+  text-align: center;
+  min-height:50px;
 }
