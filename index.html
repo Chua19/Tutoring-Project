@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Alexander Chu</title>
+      <!-- Responsive meta tags -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/scaling.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-	        <script>
-            window.onload = function() {
-              var tagline = document.querySelector(".tagline");
-              var randomGreeting = Math.floor(Math.random() * 11);
-              var greeting = ["Programmer, Hardcore Gamer, and dabbing so hard. Refresh to see another one", "Programmer, Hardcore Gamer, and a Teemo player. Refresh to see another one", "Programmer, Hardcore Gamer, and a Reinhardt main. Refresh to see another one", "Programmer, Hardcore Gamer, and a Monstercat fan. Refresh to see another one", "Programmer, Hardcore Gamer, and fed up with you. Refresh to see another one", "Programmer, Hardcore Gamer, and why are you still refreshing? Look at my website! Refresh to see another one", "Programmer, Hardcore Gamer, and in love with butter. Refresh to see another one", "Programmer, Hardcore Gamer, and an expert in narwhals (Nope). Refresh to see another one", "Programmer, Hardcore Gamer, and always sleeping. Refresh to see another one", "Programmer, Hardcore Gamer, and stupid. Refresh to see another one", "Programmer, Hardcore Gamer, and terrible at everrything. Refresh to see another one", "Programmer, Hardcore Gamer, and Doc Chu's son. Refresh to see another one"];
-              tagline.innerHTML = greeting[randomGreeting];
-            };
-        </script>
+      <!-- Page Title -->
+      <title>Alexander Chu - Home</title>
+
+      <!-- Bootstrap and jQuery-->
+      <link rel="stylesheet" href="css/bootstrap.css">
+      <link rel="stylesheet" href="css/styling.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
 
   </head>
-  <body background="img/background.jpg">
-  <div style="background: #FFFFFF">
-  <div class="navbar-header">
+  <body data-spy="scroll" data-target="#navbar">
+      <!-- The Nav -->
+      <nav class="navbar navbar-default navbar-fixed-top" id="navbar">
+              <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
@@ -36,36 +34,83 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="collapse">
-                 
+
                   <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="gaming.html">Gaming</a></li>
-		    <li><a href="personalfinance.html">Personal Finance</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#gaming">Gaming</a></li>
+                    <li><a href="#contact">Contact</a></li>
                   </ul>
                 </div><!-- /.navbar-collapse -->
-	  </div>
-              <div class="headwrap-home"> 
-                  <div class="container">
-                   
-                    <div class="content">
-			    <h1><center>Alexander Chu</center></h1>
-                        <h3 class="subtitle animated fadeInUp tagline"></h3>
-                        
-                
-                        
-                    </div>
-                           <div id="footer-index">&copy; Alexander Chu</div>
-                  </div>
-	  </div>
+              </div><!-- /.container-fluid -->
+            </nav>
 
+            <div class="header container">
+              <h1 class="title animated fadeInDownBig">Alexander Chu</h1>
+              <h2 class="animated fadeIn">Student, Developer, Gamer</h2>
+              <div class="animated fadeIn"><img class="icon" src="img/Source Code Filled.png"> <img class="icon" src="img/Controller.png"> <img class="icon" src="img/Pencil.png"></div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+            </div>
+            <div class="container" id="about">
+              <h1>About</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dictum lacus. Donec laoreet tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean rhoncus, ex in volutpat lacinia, massa sem euismod libero, a mollis felis elit consequat sapien. Aliquam eu nulla nec nunc hendrerit tempus. Mauris nisl turpis, posuere at rutrum quis, lobortis quis justo. Phasellus ullamcorper ac lorem sed egestas. Ut suscipit mauris tellus, ut tempor lorem commodo nec. Vestibulum fringilla, metus in euismod venenatis, tortor orci rhoncus libero, at lacinia massa nibh sit amet mauris. Donec eleifend vulputate consectetur.
+
+Quisque sit amet ex sed sem placerat posuere nec non dui. Duis scelerisque ornare magna id elementum. Nam eleifend justo sit amet leo pharetra molestie. Pellentesque sed nibh justo. Phasellus eu massa luctus nisi faucibus rutrum. Duis at sem justo. Ut at elementum massa, ac condimentum ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec fringilla orci a sapien pharetra volutpat. Praesent nec ligula consectetur, malesuada enim nec, congue orci. Praesent aliquam elit nec ultricies suscipit. Nullam lectus quam, porta at lacinia sit amet, varius at velit. Aliquam pretium purus felis, id commodo ante tincidunt eget. In efficitur nisi ac placerat congue. Sed volutpat tortor eu consectetur finibus. Nulla eu lobortis mi.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut sagittis nibh vel leo rutrum, venenatis placerat ex luctus. Aenean placerat pretium lectus, vel consequat est scelerisque vel. Cras imperdiet maximus interdum. Praesent felis enim, consequat non tincidunt vehicula, interdum quis augue. Etiam lacus odio, vehicula nec lorem pretium, venenatis mattis tellus. Duis non velit at dui volutpat hendrerit sed et lorem. Quisque sit amet vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus consequat sapien quis suscipit bibendum. Nam nec ex in eros tempor vehicula laoreet eu mi. Phasellus sit amet nulla eu sem tempor tristique ac nec libero.
+
+Donec metus orci, interdum quis quam at, consequat pharetra massa. Quisque convallis justo nisi, iaculis congue tortor commodo ac. Donec ut molestie sem, non vehicula ante. Sed sodales luctus massa non efficitur. Donec auctor maximus porttitor. Vivamus efficitur sagittis ante id aliquam. Ut posuere mi ut tortor vestibulum tempus. In et nunc elit. Morbi ligula erat, tempor ac orci ac, consectetur iaculis odio. Nunc bibendum eget nisl sit amet mollis. In aliquam tempus blandit. In hac habitasse platea dictumst. Suspendisse porta ante quis enim commodo, vel sollicitudin nunc elementum. Suspendisse potenti.
+
+Sed porta tincidunt nunc eu pretium. Integer a lacinia mauris. Maecenas id odio leo. Aliquam purus ipsum, rhoncus a porta vel, dapibus eget ipsum. Nullam tellus dui, dapibus nec mauris quis, gravida ornare tellus. Nulla porttitor in orci sit amet bibendum. Nulla tristique pharetra cursus. Curabitur ut tempus magna. Nulla eleifend odio tortor, eu aliquam nulla volutpat in. Etiam sed elit in turpis ultricies placerat. Nulla accumsan viverra dui sed commodo. Aliquam vulputate mi eget sem sagittis, at eleifend nulla interdum. Praesent ipsum diam, pellentesque nec ullamcorper vitae, congue vitae enim. Fusce porttitor imperdiet magna nec gravida. Etiam euismod, purus vel consequat scelerisque, urna metus euismod libero, non venenatis ex nisl nec nunc.</p>
+            </div>
+            <div class="container" id="projects">
+              <h1>Projects</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dictum lacus. Donec laoreet tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean rhoncus, ex in volutpat lacinia, massa sem euismod libero, a mollis felis elit consequat sapien. Aliquam eu nulla nec nunc hendrerit tempus. Mauris nisl turpis, posuere at rutrum quis, lobortis quis justo. Phasellus ullamcorper ac lorem sed egestas. Ut suscipit mauris tellus, ut tempor lorem commodo nec. Vestibulum fringilla, metus in euismod venenatis, tortor orci rhoncus libero, at lacinia massa nibh sit amet mauris. Donec eleifend vulputate consectetur.
+
+Quisque sit amet ex sed sem placerat posuere nec non dui. Duis scelerisque ornare magna id elementum. Nam eleifend justo sit amet leo pharetra molestie. Pellentesque sed nibh justo. Phasellus eu massa luctus nisi faucibus rutrum. Duis at sem justo. Ut at elementum massa, ac condimentum ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec fringilla orci a sapien pharetra volutpat. Praesent nec ligula consectetur, malesuada enim nec, congue orci. Praesent aliquam elit nec ultricies suscipit. Nullam lectus quam, porta at lacinia sit amet, varius at velit. Aliquam pretium purus felis, id commodo ante tincidunt eget. In efficitur nisi ac placerat congue. Sed volutpat tortor eu consectetur finibus. Nulla eu lobortis mi.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut sagittis nibh vel leo rutrum, venenatis placerat ex luctus. Aenean placerat pretium lectus, vel consequat est scelerisque vel. Cras imperdiet maximus interdum. Praesent felis enim, consequat non tincidunt vehicula, interdum quis augue. Etiam lacus odio, vehicula nec lorem pretium, venenatis mattis tellus. Duis non velit at dui volutpat hendrerit sed et lorem. Quisque sit amet vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus consequat sapien quis suscipit bibendum. Nam nec ex in eros tempor vehicula laoreet eu mi. Phasellus sit amet nulla eu sem tempor tristique ac nec libero.
+
+Donec metus orci, interdum quis quam at, consequat pharetra massa. Quisque convallis justo nisi, iaculis congue tortor commodo ac. Donec ut molestie sem, non vehicula ante. Sed sodales luctus massa non efficitur. Donec auctor maximus porttitor. Vivamus efficitur sagittis ante id aliquam. Ut posuere mi ut tortor vestibulum tempus. In et nunc elit. Morbi ligula erat, tempor ac orci ac, consectetur iaculis odio. Nunc bibendum eget nisl sit amet mollis. In aliquam tempus blandit. In hac habitasse platea dictumst. Suspendisse porta ante quis enim commodo, vel sollicitudin nunc elementum. Suspendisse potenti.
+
+Sed porta tincidunt nunc eu pretium. Integer a lacinia mauris. Maecenas id odio leo. Aliquam purus ipsum, rhoncus a porta vel, dapibus eget ipsum. Nullam tellus dui, dapibus nec mauris quis, gravida ornare tellus. Nulla porttitor in orci sit amet bibendum. Nulla tristique pharetra cursus. Curabitur ut tempus magna. Nulla eleifend odio tortor, eu aliquam nulla volutpat in. Etiam sed elit in turpis ultricies placerat. Nulla accumsan viverra dui sed commodo. Aliquam vulputate mi eget sem sagittis, at eleifend nulla interdum. Praesent ipsum diam, pellentesque nec ullamcorper vitae, congue vitae enim. Fusce porttitor imperdiet magna nec gravida. Etiam euismod, purus vel consequat scelerisque, urna metus euismod libero, non venenatis ex nisl nec nunc.
+Maecenas pellentesque sollicitudin eros eget accumsan. Vivamus vehicula accumsan purus, ac convallis ligula porttitor a. Etiam quis pellentesque mi, in tincidunt eros. Quisque tellus mauris, viverra in nibh eget, pellentesque imperdiet augue. Nunc rutrum volutpat quam, dapibus auctor justo vestibulum et. Sed eget nibh in velit accumsan porta at vitae nisl. Fusce ornare auctor porta. Quisque dapibus lectus molestie risus vestibulum mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec varius ex libero, a placerat lectus tristique vitae. Praesent sit amet luctus neque, quis finibus dolor.
+
+Integer sodales sapien urna, quis posuere erat faucibus quis. Integer suscipit ac risus id consectetur. Fusce libero libero, condimentum ut posuere id, maximus ac velit. Integer posuere convallis ex nec elementum. Nam hendrerit laoreet lacus, et egestas diam. Ut felis enim, faucibus nec lorem non, tincidunt gravida massa. Nunc metus ex, pulvinar sed lectus in, dictum dictum nisi. Nullam commodo dictum vehicula. Fusce rhoncus odio non erat tempus, facilisis tincidunt magna sagittis. Nullam consectetur suscipit eros eu ornare.
+
+Curabitur venenatis odio vitae congue cursus. Etiam tincidunt consectetur sem ut ornare. Maecenas consequat felis vitae tellus bibendum luctus. Suspendisse potenti. Fusce tincidunt sollicitudin eleifend. Etiam faucibus nibh eu commodo feugiat. Nulla sit amet magna massa. Duis viverra, velit a porttitor feugiat, metus lectus suscipit ante, vel faucibus nisl ligula nec risus. Duis dignissim lobortis tortor, id gravida elit accumsan id. Maecenas ullamcorper elementum est ac congue. Ut sollicitudin tristique quam eu bibendum. Proin a odio id justo tincidunt semper.</p>
+            </div>
+            <div class="container" id="gaming">
+              <h1>Gaming</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dictum lacus. Donec laoreet tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean rhoncus, ex in volutpat lacinia, massa sem euismod libero, a mollis felis elit consequat sapien. Aliquam eu nulla nec nunc hendrerit tempus. Mauris nisl turpis, posuere at rutrum quis, lobortis quis justo. Phasellus ullamcorper ac lorem sed egestas. Ut suscipit mauris tellus, ut tempor lorem commodo nec. Vestibulum fringilla, metus in euismod venenatis, tortor orci rhoncus libero, at lacinia massa nibh sit amet mauris. Donec eleifend vulputate consectetur.
+
+Quisque sit amet ex sed sem placerat posuere nec non dui. Duis scelerisque ornare magna id elementum. Nam eleifend justo sit amet leo pharetra molestie. Pellentesque sed nibh justo. Phasellus eu massa luctus nisi faucibus rutrum. Duis at sem justo. Ut at elementum massa, ac condimentum ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec fringilla orci a sapien pharetra volutpat. Praesent nec ligula consectetur, malesuada enim nec, congue orci. Praesent aliquam elit nec ultricies suscipit. Nullam lectus quam, porta at lacinia sit amet, varius at velit. Aliquam pretium purus felis, id commodo ante tincidunt eget. In efficitur nisi ac placerat congue. Sed volutpat tortor eu consectetur finibus. Nulla eu lobortis mi.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut sagittis nibh vel leo rutrum, venenatis placerat ex luctus. Aenean placerat pretium lectus, vel consequat est scelerisque vel. Cras imperdiet maximus interdum. Praesent felis enim, consequat non tincidunt vehicula, interdum quis augue. Etiam lacus odio, vehicula nec lorem pretium, venenatis mattis tellus. Duis non velit at dui volutpat hendrerit sed et lorem. Quisque sit amet vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus consequat sapien quis suscipit bibendum. Nam nec ex in eros tempor vehicula laoreet eu mi. Phasellus sit amet nulla eu sem tempor tristique ac nec libero.
+
+Donec metus orci, interdum quis quam at, consequat pharetra massa. Quisque convallis justo nisi, iaculis congue tortor commodo ac. Donec ut molestie sem, non vehicula ante. Sed sodales luctus massa non efficitur. Donec auctor maximus porttitor. Vivamus efficitur sagittis ante id aliquam. Ut posuere mi ut tortor vestibulum tempus. In et nunc elit. Morbi ligula erat, tempor ac orci ac, consectetur iaculis odio. Nunc bibendum eget nisl sit amet mollis. In aliquam tempus blandit. In hac habitasse platea dictumst. Suspendisse porta ante quis enim commodo, vel sollicitudin nunc elementum. Suspendisse potenti.
+
+Sed porta tincidunt nunc eu pretium. Integer a lacinia mauris. Maecenas id odio leo. Aliquam purus ipsum, rhoncus a porta vel, dapibus eget ipsum. Nullam tellus dui, dapibus nec mauris quis, gravida ornare tellus. Nulla porttitor in orci sit amet bibendum. Nulla tristique pharetra cursus. Curabitur ut tempus magna. Nulla eleifend odio tortor, eu aliquam nulla volutpat in. Etiam sed elit in turpis ultricies placerat. Nulla accumsan viverra dui sed commodo. Aliquam vulputate mi eget sem sagittis, at eleifend nulla interdum. Praesent ipsum diam, pellentesque nec ullamcorper vitae, congue vitae enim. Fusce porttitor imperdiet magna nec gravida. Etiam euismod, purus vel consequat scelerisque, urna metus euismod libero, non venenatis ex nisl nec nunc.</p>
+            </div>
+            <div class="container" id="contact">
+              <h1>Contact</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dictum lacus. Donec laoreet tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean rhoncus, ex in volutpat lacinia, massa sem euismod libero, a mollis felis elit consequat sapien. Aliquam eu nulla nec nunc hendrerit tempus. Mauris nisl turpis, posuere at rutrum quis, lobortis quis justo. Phasellus ullamcorper ac lorem sed egestas. Ut suscipit mauris tellus, ut tempor lorem commodo nec. Vestibulum fringilla, metus in euismod venenatis, tortor orci rhoncus libero, at lacinia massa nibh sit amet mauris. Donec eleifend vulputate consectetur.
+
+Quisque sit amet ex sed sem placerat posuere nec non dui. Duis scelerisque ornare magna id elementum. Nam eleifend justo sit amet leo pharetra molestie. Pellentesque sed nibh justo. Phasellus eu massa luctus nisi faucibus rutrum. Duis at sem justo. Ut at elementum massa, ac condimentum ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec fringilla orci a sapien pharetra volutpat. Praesent nec ligula consectetur, malesuada enim nec, congue orci. Praesent aliquam elit nec ultricies suscipit. Nullam lectus quam, porta at lacinia sit amet, varius at velit. Aliquam pretium purus felis, id commodo ante tincidunt eget. In efficitur nisi ac placerat congue. Sed volutpat tortor eu consectetur finibus. Nulla eu lobortis mi.
+
+Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut sagittis nibh vel leo rutrum, venenatis placerat ex luctus. Aenean placerat pretium lectus, vel consequat est scelerisque vel. Cras imperdiet maximus interdum. Praesent felis enim, consequat non tincidunt vehicula, interdum quis augue. Etiam lacus odio, vehicula nec lorem pretium, venenatis mattis tellus. Duis non velit at dui volutpat hendrerit sed et lorem. Quisque sit amet vestibulum neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus consequat sapien quis suscipit bibendum. Nam nec ex in eros tempor vehicula laoreet eu mi. Phasellus sit amet nulla eu sem tempor tristique ac nec libero.
+
+Donec metus orci, interdum quis quam at, consequat pharetra massa. Quisque convallis justo nisi, iaculis congue tortor commodo ac. Donec ut molestie sem, non vehicula ante. Sed sodales luctus massa non efficitur. Donec auctor maximus porttitor. Vivamus efficitur sagittis ante id aliquam. Ut posuere mi ut tortor vestibulum tempus. In et nunc elit. Morbi ligula erat, tempor ac orci ac, consectetur iaculis odio. Nunc bibendum eget nisl sit amet mollis. In aliquam tempus blandit. In hac habitasse platea dictumst. Suspendisse porta ante quis enim commodo, vel sollicitudin nunc elementum. Suspendisse potenti.
+
+Sed porta tincidunt nunc eu pretium. Integer a lacinia mauris. Maecenas id odio leo. Aliquam purus ipsum, rhoncus a porta vel, dapibus eget ipsum. Nullam tellus dui, dapibus nec mauris quis, gravida ornare tellus. Nulla porttitor in orci sit amet bibendum. Nulla tristique pharetra cursus. Curabitur ut tempus magna. Nulla eleifend odio tortor, eu aliquam nulla volutpat in. Etiam sed elit in turpis ultricies placerat. Nulla accumsan viverra dui sed commodo. Aliquam vulputate mi eget sem sagittis, at eleifend nulla interdum. Praesent ipsum diam, pellentesque nec ullamcorper vitae, congue vitae enim. Fusce porttitor imperdiet magna nec gravida. Etiam euismod, purus vel consequat scelerisque, urna metus euismod libero, non venenatis ex nisl nec nunc.</p>
+            </div>
+
+            <div class="footer">
+              <div class="container">
+              <p><b>&copy; 2017 Alexander Chu</b></p>
+              </div>
+            </div>
+
 
   </body>
 </html>
