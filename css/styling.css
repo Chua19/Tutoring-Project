@@ -44,7 +44,7 @@ body {
   padding: 1rem;
   background-color: #042026;
   text-align: center;
-  min-height:50px;
+  min-height:25px;
 }
 .float-my-children > * {
     float:left;
