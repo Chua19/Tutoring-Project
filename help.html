@@ -12,6 +12,42 @@
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
 .fa-anchor,.fa-coffee,.fa-male {font-size:175px}
+        .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 </style>
 <head>
         <script>
@@ -56,18 +92,59 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
       <h5 class="w3-padding-32">Welcome! We are a group of students dedicated to helping you or your children succeed during these hard times. We are offering <b>free</b> services to those that need help in school. Whether you have a quick question or you want some more extensive tutoring, we have many options for you to choose from below.</h5>
   </div>
 </div>
+        
+        
+<div class="w3-container">
+  <div class="w3-content">
+          <h5><center>Accordion with symbols</center></h5>
+                <p>In this example we have added a "plus" sign to each button. When the user clicks on the button, the "plus" sign is replaced with a "minus" sign.</p>
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+         } 
+         });
+        }
+        </script>
+  </div>
+</div>
+        
+        
 <!-- First Grid -->
 <div class="w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Have a Question?</h1>
-      <h5 class="w3-padding-32">Whether you're looking for a quick explanation to a problem or some assistance with homework, we are here to help. Just submit your question below and we will get back to you within 24 hours.</h5>
+      <h5 class="w3-padding-32">Whether you're looking for a quick explanation to a problem or some assistance with homework, we are here to help. Use the button below to submit your question and we will get back to you within 24 hours.</h5>
 
       <p class="w3-text-grey"></p>
     </div>
 
     <div class="w3-third w3-center">
-            <i class="fa fa-male w3-padding-64 w3-text-blue"></i>
+            <i class="fa fa-book w3-padding-64 w3-text-blue"></i>
     </div>
   </div>
 </div>
@@ -76,7 +153,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Need a Tutor?</h1>
-      <h5 class="w3-padding-32">Looking for some more extensive help? We can set you up with some one-on-one tutoring. We have many dedicated college students ready to teach you the topics you need to learn.</h5>
+      <h5 class="w3-padding-32">Looking for some more extensive help? We can set you up with some one-on-one tutoring. We have many dedicated college students ready to teach you the topics you need to learn. Use the button below to request a tutor and we will get back to you to set up a time.</h5>
 
       <p class="w3-text-grey"></p>
     </div>
