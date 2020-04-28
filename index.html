@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Alexander Chu</title>
+<title>Title</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" href="img/17691779.ico" />
@@ -11,7 +11,43 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
-.fa-anchor,.fa-coffee,.fa-male {font-size:175px}
+.fa-anchor,.fa-coffee,.fa-male,.fa-book {font-size:175px}
+        .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
 </style>
 <head>
         <script>
@@ -25,7 +61,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </head>
 <body>
 
-<!-- Navbar -->
+<!-- Navbar
 <div class="w3-top">
   <div class="w3-bar w3-indigo w3-card w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
@@ -33,32 +69,97 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resume</a>
     <!-- <a href="pictures.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Pictures</a>
     <a href="things.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Random Things</a>
-    <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a> -->
+    <a href="social.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Social</a>
   </div>
-
-  <!-- Navbar on small screens -->
+-->
+  <!-- Navbar on small screens
   <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
     <a href="resume.html" class="w3-bar-item w3-button w3-padding-large">Resume</a>
     <!-- <a href="pictures.html" class="w3-bar-item w3-button w3-padding-large">Pictures</a>
     <a href="things.html" class="w3-bar-item w3-button w3-padding-large">Random Things</a>
-    <a href="social.html" class="w3-bar-item w3-button w3-padding-large">Social</a> -->
+    <a href="social.html" class="w3-bar-item w3-button w3-padding-large">Social</a>
   </div>
 </div>
-
-<!-- Header -->
+-->
+<!-- Header
 <header class="w3-container w3-pale-blue w3-center" style="padding:128px 16px">
   <h1 class="w3-margin w3-jumbo">Alexander Chu</h1>
   <p class="w3-xlarge">Welcome to my Website!</p>
 </header>
+-->
+<div class="w3-container">
+  <div class="w3-content">
+      <h5 class="w3-padding-32">Welcome! We are a group of students dedicated to helping you or your children succeed during these hard times. We are offering <b>free</b> services to those that need help in school. Whether you have a quick question or you want some more extensive tutoring, we have many options for you to choose from below.</h5>
+  </div>
+</div>
+        
+        
+<div class="w3-container">
+  <div class="w3-content">
+          <h1><center>FAQ</center></h1>
+                <button class="accordion">What topics can I ask about?</button>
+                <div class="panel">
+                        <p>You can ask us anything! We have people with a wide variety of skillsets, from the Social Sciences and English to the Natural Sciences and Math. Ask away, we are here to help.</p>
+                </div>
 
+                <button class="accordion">Is this service free?</button>
+                <div class="panel">
+                        <p>Yes! We understand that these times can be tough and we want to do our best to help. A lot of college students that have returned home have a lot of free time on their hands, so this is our way of giving back.</p>
+                </div>
+
+                <button class="accordion">How does one-on-one tutoring work?</button>
+                <div class="panel">
+                        <p>Obviously, with everything going on right now, we are unable to do in-person tutoring. However, we are looking to setup video calls where you will still be able to talk one-on-one with one of the college students available. Usually we will use Zoom to hold those calls.</p>
+                </div>
+          
+                <button class="accordion">What if I want to help out others?</button>
+                <div class="panel">
+                        <p>That's great to hear! Whether you want to help answer questions or are looking to become a tutor, we are always happy to have more people. Click <a href="#">here</a> to sign up.</p>
+                </div>
+
+        <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+         } 
+         });
+        }
+        </script>
+  </div>
+</div>
+        
+        
 <!-- First Grid -->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div class="w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Who Am I?</h1>
-      <h5 class="w3-padding-32">I am an 18 year old college student, currently attending University of Maryland College Park for a Bachelor's Degree in Computer Science. I recently graduated River Dell Regional High School. Some notable projects I've worked on include HackRiverDell, Notis, and Hypnotic Robotics (See Resume for more details). </h5>
+      <h1>Have a Question?</h1>
+      <h5 class="w3-padding-32">Whether you're looking for a quick explanation to a problem or some assistance with homework, we are here to help. Use the button below to submit your question and we will get back to you within 24 hours.</h5>
 
-      <p class="w3-text-grey"></p>
+      <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfCwKURMiDaFJOzgsq-9CktqyC59N0d-molwCoEh4oxZBjr_g/viewform?usp=sf_link';">Ask a Question</button>
+    </div>
+
+    <div class="w3-third w3-center">
+            <i class="fa fa-book w3-padding-64 w3-text-blue"></i>
+    </div>
+  </div>
+</div>
+        
+<div class="w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Need a Tutor?</h1>
+      <h5 class="w3-padding-32">Looking for some more extensive help? We can set you up with some one-on-one tutoring. We have many dedicated college students ready to teach you the topics you need to learn. Use the button below to request a tutor and we will get back to you to set up a time.</h5>
+
+      <button onclick="window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSc98kiZyZFOQYJJmPa7VkeaC4Bm-gKqGwOemYaaS02RVt1Ehw/viewform?usp=sf_link';">Signup</button>
     </div>
 
     <div class="w3-third w3-center">
@@ -67,10 +168,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<!-- Second Grid -->
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge tagline"></h1>
-</div>
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity">  
@@ -79,7 +176,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
  </div>
- <p><b>&copy; 2019 Alexander Chu</b></p>
+ <p><b>&copy; 2020 Alexander Chu</b></p>
 </footer>
 
 <script>
